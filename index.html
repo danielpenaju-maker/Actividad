@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es"> <!-- Se especifica que el documento está en español -->
+<head>
+  <meta charset="UTF-8"> <!-- Codificación para que se vean bien las tildes y caracteres especiales -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Hace que la página sea responsive en móviles -->
+  <title>Propiedades CSS</title> <!-- Título que aparece en la pestaña del navegador -->
+  <link rel="stylesheet" href="estilos/styles.css"> <!-- Se enlaza un archivo CSS externo -->
+</head>
+<body>
+
+  <!-- Se crea una tabla que sirve como guía rápida de propiedades CSS -->
+  <table>
+    <caption>Guía rápida de propiedades CSS</caption> <!-- Título de la tabla -->
+    <thead>
+      <!-- Encabezados de las columnas -->
+      <tr>
+        <th>Nombre de la propiedad</th>
+        <th>Sintaxis</th>
+        <th>Descripción de uso</th>
+        <th>Ejemplo de uso</th>
+        <th>Imagen de referencia</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Primera fila: propiedad color -->
+      <tr>
+        <td>color</td>
+        <td><code>color: &lt;valor&gt;;</code></td>
+        <td>Define el color del texto.</td>
+        <td><code>p { color: #c7254e; }</code></td>
+        <td>
+            <!-- Caja que contiene una imagen de ejemplo -->
+            <div class="image-box">
+                <img src="Imagenes/HolaMundo.jpg" alt="HolaMundo">
+            </div>
+        </td>
+      </tr>
+
+      <!-- Segunda fila: propiedad font-size -->
+      <tr>
+        <td>font-size</td>
+        <td><code>font-size: &lt;longitud|keyword&gt;;</code></td>
+        <td>Establece el tamaño de la fuente.</td>
+        <td><code>h1 { font-size: 2rem; }</code></td>
+        <td>
+            <div class="image-box">
+                <img src="Imagenes/Font-Size.png" alt="HolaMundo">
+            </div>
+        </td>
+      </tr>
+
+      <!-- Tercera fila: propiedad margin -->
+      <tr>
+        <td>margin</td>
+        <td><code>margin: &lt;valores&gt;;</code></td>
+        <td>Controla el espacio exterior alrededor del elemento.</td>
+        <td><code>.card { margin: 16px 8px; }</code></td>
+        <td>
+            <div class="image-box">
+                <img src="Imagenes/Margin.png" alt="HolaMundo">
+            </div>
+        </td>
+      </tr>
+
+      <!-- Cuarta fila: propiedad padding -->
+      <tr>
+        <td>padding</td>
+        <td><code>padding: &lt;valores&gt;;</code></td>
+        <td>Controla el espacio interior entre el borde y el contenido.</td>
+        <td><code>button { padding: 8px 12px; }</code></td>
+        <td>
+            <div class="image-box">
+                <img src="Imagenes/Padding.png" alt="HolaMundo">
+            </div>
+        </td>
+      </tr>
+
+      <!-- Quinta fila: propiedad border-radius -->
+      <tr>
+        <td>border-radius</td>
+        <td><code>border-radius: &lt;longitud|%&gt;;</code></td>
+        <td>Redondea las esquinas del borde.</td>
+        <td><code>img { border-radius: 50%; }</code></td>
+        <td>
+            <div class="image-box">
+                <img src="Imagenes/Border-Radius.png" alt="HolaMundo">
+            </div>
+        </td>
+      </tr>
+
+      <!-- Sexta fila: propiedad display -->
+      <tr>
+        <td>display</td>
+        <td><code>display: &lt;tipo&gt;;</code></td>
+        <td>Define el comportamiento de caja (bloque, inline, grid, flex, etc.).</td>
+        <td><code>nav { display: flex; }</code></td>
+        <td>
+            <div class="image-box">
+                <img src="Imagenes/Display.png" alt="HolaMundo">
+            </div>
+        </td>
+      </tr>
+
+      <!-- Séptima fila: propiedad justify-content -->
+      <tr>
+        <td>justify-content</td>
+        <td><code>justify-content: &lt;valor&gt;;</code></td>
+        <td>Alinea horizontalmente los ítems en un contenedor flex/grid.</td>
+        <td><code>.row { display:flex; justify-content: space-between; }</code></td>
+        <td>
+            <div class="image-box">
+                <img src="Imagenes/Justify.png" alt="HolaMundo">
+            </div>
+        </td>
+      </tr>
+
+      <!-- Octava fila: propiedad grid-template-columns -->
+      <tr>
+        <td>grid-template-columns</td>
+        <td><code>grid-template-columns: &lt;pistas&gt;;</code></td>
+        <td>Define las columnas de una cuadrícula (Grid).</td>
+        <td><code>.grid { display:grid; grid-template-columns: 1fr 2fr 1fr; }</code></td>
+        <td>
+            <div class="image-box">
+                <img src="Imagenes/Grid.png" alt="HolaMundo">
+            </div>
+        </td>
+      </tr>
+
+      <!-- Novena fila: propiedad background-color -->
+      <tr>
+        <td>background-color</td>
+        <td><code>background-color: &lt;color&gt;;</code></td>
+        <td>Define el color de fondo de un elemento.</td>
+        <td><code>body { background-color: #f0f0f0; }</code></td>
+        <td>
+            <div class="image-box">
+                <img src="Imagenes/Bg.png" alt="HolaMundo">
+            </div>
+        </td>
+      </tr>
+
+      <!-- Décima fila: propiedad box-shadow -->
+      <tr>
+        <td>box-shadow</td>
+        <td><code>box-shadow: &lt;valores&gt;;</code></td>
+        <td>Agrega una sombra a un elemento.</td>
+        <td><code>div { box-shadow: 2px 4px 10px rgba(0,0,0,0.2); }</code></td>
+        <td>
+            <div class="image-box">
+                <img src="Imagenes/Box.png" alt="HolaMundo">
+            </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Texto de ejemplo para mostrar las propiedades en acción -->
+  <h1>Hola Mundo</h1>
+
+</body>
+</html>
